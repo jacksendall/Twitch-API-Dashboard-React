@@ -21,14 +21,12 @@ function Streams() {
             // call the api agian to get game name from game ID
             let gameIDs = dataArray.map(stream => {
                 return stream.game_id
-            })
-            // console.log(gameIDs);
-
+            });
             let baseURL = 'https://api.twitch.tv/helix/games?';
             let queryParams = '';
             gameIDs.map(id => {
                 return (queryParams = queryParams + `id=${id}&`);
-            })
+            });
 
             let finalURL = baseURL + queryParams;
             // console.log(finalURL);
