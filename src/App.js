@@ -1,17 +1,12 @@
 import React from 'react';
-
 import logo from './logo.svg';
 import twitch from './twitch.svg';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-
-
-
 import "bootstrap/dist/css/bootstrap.min.css";
 import "shards-ui/dist/css/shards.min.css";
 import './App.css';
 import Auth from './components/Auth';
-
 import Streams from './components/Streams';
 import Games from './components/Games';
 import Header from './components/Header';
@@ -33,9 +28,6 @@ function App() {
 
 
         <Header />
-        {/* <Counter /> */}
-        {/* <Uploader /> */}
-        
         <Route exact path='/' component={Games} />
         <Route exact path='/top-games' component={Games} />
         <Route exact path='/top-streams' component={Streams} />

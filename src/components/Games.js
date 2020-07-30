@@ -1,9 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import {Link} from 'react-router-dom';
 import api from '../api'
-import apiGetToken from '../apiGetToken'
-import axios from 'axios';
-import Auth from '../components/Auth'
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "shards-ui/dist/css/shards.min.css";
