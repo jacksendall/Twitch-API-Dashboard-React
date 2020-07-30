@@ -37,7 +37,7 @@ function Streams() {
             // console.log(gameNameArray)
 
 
-            // loop through the stream array to find the ID and set the value of gameName
+            // add value key: gameName and loop through the game name array to check for matching ID and set the value of gameName
             let finalArray = dataArray.map(stream => {
                 stream.gameName = ''
                 gameNameArray.map(names => {
